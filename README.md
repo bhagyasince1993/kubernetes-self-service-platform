@@ -72,3 +72,16 @@ the implemented prototype.
 The Linux enterprise roadmap and Telco Cloud PRD
 describe proposed future capabilities. They do not
 represent completed VMware deployments.
+
+---
+
+## Data Confidentiality Notice
+
+This repository is an independent portfolio project.
+Any customer scenarios, business metrics, BVI scores
+and example datasets are synthetic or illustrative
+and provided for demonstration purposes only.
+
+Kubernetes experiment results and screenshots reflect
+actual testing in a local development environment.
+No production VMware Tanzu deployment is claimed.
