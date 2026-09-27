@@ -23,3 +23,29 @@ an existing cluster.
 ![Successful Kubernetes cluster provisioning](screenshots/cluster-provisioning.png)
 
 **Status:** PASS
+
+---
+
+## Experiment 04: Linux Deployment Verification
+
+**Objective:** Verify Kubernetes cluster availability and confirm all NGINX replicas are healthy.
+
+**Commands:**
+
+    kind get clusters
+    kubectl config use-context kind-vmware-lab
+    kubectl get nodes -o wide
+    kubectl get deployments,pods -n self-service -o wide
+
+**Observed results:**
+- Two clusters: vmware-lab and vmware-test.
+- Kubernetes version: v1.35.0.
+- NGINX deployment: 3/3 ready replicas.
+- Three Pods running with zero restarts.
+- Container image: nginx:stable.
+
+**Screenshot:**
+
+![Linux deployment verification](screenshots/04-linux-deployment.png)
+
+**Result: PASS**
