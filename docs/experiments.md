@@ -49,3 +49,42 @@ an existing cluster.
 ![Linux deployment verification](screenshots/04-linux-deployment.png)
 
 **Result: PASS**
+
+---
+
+## Experiment 05: Linux Workload Scaling
+
+**Objective:** Scale NGINX from three to four replicas
+and verify successful rollout.
+
+**Cluster:** vmware-lab
+
+**Command:**
+
+    kubectl scale deployment nginx-demo --replicas=4 -n self-service
+    kubectl rollout status deployment/nginx-demo -n self-service
+    kubectl get deployment nginx-demo -n self-service
+    kubectl get pods -n self-service
+
+### Before Scaling
+
+![Three ready replicas](screenshots/05-before-scaling.png)
+
+### After Scaling
+
+![Four ready replicas](screenshots/05-after-scaling.png)
+
+### Results
+
+| Metric | Before | After |
+|---|---:|---:|
+| Desired replicas | 3 | 4 |
+| Ready replicas | 3 | 4 |
+| Running Pods | 3 | 4 |
+| Pod restarts | 0 | 0 |
+
+**Status: PASS**
+
+Kubernetes successfully scaled the deployment
+from three to four replicas. All four Pods were
+running after the rollout.
