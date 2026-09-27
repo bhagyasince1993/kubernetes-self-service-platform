@@ -85,3 +85,12 @@ and provided for demonstration purposes only.
 Kubernetes experiment results and screenshots reflect
 actual testing in a local development environment.
 No production VMware Tanzu deployment is claimed.
+
+---
+
+## UX Wireframe
+
+Designed a six-screen Kubernetes self-service portal wireframe covering the dashboard, cluster requests, Linux deployment, workload scaling, rolling upgrades and deployment history.
+
+**[View Kubernetes Self-Service UX Wireframe (PDF)](docs/wireframes/kubernetes-wireframe-portfolio.pdf)**
+
