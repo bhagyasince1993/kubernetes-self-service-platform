@@ -780,3 +780,15 @@ Planned:
 - Windows workload deployment
 - Self-service interface
 - Production-oriented monitoring
+
+## Recovery Test Results
+
+The invalid-image upgrade test was completed.
+
+Verification using kubectl confirmed:
+- NGINX was restored to version 1.28.
+- All three replicas were Ready and Available.
+- All three Pods were Running.
+
+The final upgrade-script log is still needed to confirm
+that the automatic rollback logic performed the recovery.
