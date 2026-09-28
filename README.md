@@ -94,3 +94,12 @@ Designed a six-screen Kubernetes self-service portal wireframe covering the dash
 
 **[View Kubernetes Self-Service UX Wireframe (PDF)](docs/wireframes/kubernetes-wireframe-portfolio.pdf)**
 
+
+---
+
+## UX Wireframe
+
+Designed a six-screen Kubernetes self-service portal wireframe covering the dashboard, cluster requests, Linux deployment, workload scaling, rolling upgrades and deployment history.
+
+**[View Kubernetes Self-Service UX Wireframe (PDF)](docs/wireframes/kubernetes-wireframe-portfolio.pdf)**
+
